@@ -13,6 +13,8 @@ Eventually it will be a one click install for the drone device)
 
 ## HYPERION VR (Recomeneded)
 Control HYPERION devices via a VR Device (Quest 2 for now)
+Has a no passthrough and a passthrough version.
+Passthrough is recomended.
 
 ## HYPERION KB (Unsupported)
 Quickly test HYPERION using a quick and dirty C# Project.
