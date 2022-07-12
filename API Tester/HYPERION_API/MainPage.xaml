@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HYPERION_API.MainPage" WidthRequest="200" HeightRequest="200">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" WidthRequest="200">
+        <Label Text="HYPERION API Tester" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Margin="0,10"/>
+        <Entry TextChanged="TextChanged"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="▲" Margin="5,0,5,0" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" Clicked="Button_Clicked_2"/>
+            <Button Text="ᐸ" Margin="0,5,0,5" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Clicked="Button_Clicked"/>
+            <Button Text="■" Margin="0,5,0,5" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"  Grid.Row="1" Grid.Column="1  " Clicked="Button_Clicked"/>
+            <Button Text="ᐳ" Margin="0,5,0,5" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked_1"/>
+            <Button Text="▼"  Margin="5,0,5,0" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" Grid.Row="2" Clicked="Button_Clicked_3"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
