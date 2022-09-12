@@ -1,0 +1,54 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "ApiActions",
+            "id": "a169d96b-b374-4b4b-8b65-6db80b8eafdf",
+            "actions": [
+                {
+                    "name": "JoystickX",
+                    "type": "Value",
+                    "id": "da68b436-d744-4ed5-ab68-2d2cc385c959",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "JoystickY",
+                    "type": "Value",
+                    "id": "f1210dc3-dd67-43b8-9dad-30f02733ee4e",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cadfcf88-b632-41a7-8582-97250e68233e",
+                    "path": "<OculusTouchController>/thumbstick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e8e06789-3272-4743-b249-a9b0bb0f1106",
+                    "path": "<OculusTouchController>/thumbstick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

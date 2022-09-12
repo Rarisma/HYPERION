@@ -1,0 +1,18 @@
+{
+  "solution": {
+    "path": "HYPERIONMobile.sln",
+    "projects": [
+		"HYPERIONMobile.Shared\\HYPERIONMobile.Shared.shproj",
+
+		"HYPERIONMobile.Droid\\HYPERIONMobile.Droid.csproj",
+
+		"HYPERIONMobile.iOS\\HYPERIONMobile.iOS.csproj",
+
+		"HYPERIONMobile.Wasm\\HYPERIONMobile.Wasm.csproj",
+
+		"HYPERIONMobile.macOS\\HYPERIONMobile.macOS.csproj",
+
+		"HYPERIONMobile.Skia.Gtk\\HYPERIONMobile.Skia.Gtk.csproj",
+    ]
+  }
+}
