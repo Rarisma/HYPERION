@@ -2,7 +2,7 @@ using System.Net;
 
 namespace LibHYPERION;
 
-public class Motion
+public static class Motion
 {
     /// <summary>
     /// Moves wheels, takes an X and Y values between -1.00 and 1.00
@@ -11,7 +11,7 @@ public class Motion
     /// </summary>
     /// <param name="X"></param>
     /// <param name="Y"></param>
-    void Move(float X, float Y)
+    public static void Move(float X, float Y)
     {
         if (X > 0.3) // Right
         {

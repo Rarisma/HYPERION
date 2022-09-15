@@ -11,7 +11,7 @@
   / ____/ __ \/ __ \/ ____/  _   _|__ \           
  / /   / / / / /_/ / __/    | | / /_/ /           
 / /___/ /_/ / _, _/ /___    | |/ / __/            
-\____/\____/_/ |_/_____/    |___/____/            
+\____/\____/_/ |_/_____/    |___/____/           
                                                   
 Now with 105% cooler text than V1!
 */
@@ -51,11 +51,11 @@ void setup(void) {
   SensorConfig(); //This initalises the above sensors.
 
   //The following defines various endpoints
-  server.on("/Temp", []() { //Temprature Endpoint, returns as Celcius
+  server.on("/Temp", []() { //Temperature Endpoint, returns as Celcius
     if (bmp.performReading()) { server.send(200, "text/plain", String(bmp.temperature)); }
     else {server.send(200, "text/plain", "Sensor Error");}});
 
-  server.on("/Presure", []() { //Pressure Endpoint, returns as HPa (according to Sam)
+  server.on("/Pressure", []() { //Pressure Endpoint, returns as HPa (according to Sam)
     if (bmp.performReading()) { server.send(200, "text/plain", String(bmp.pressure / 100.0)); }
     else {server.send(200, "text/plain", "Sensor Error");}});
 

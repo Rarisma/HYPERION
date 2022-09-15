@@ -5,24 +5,40 @@
     xmlns:local="using:HYPERIONMobile"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="80"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="60"/>
-            <ColumnDefinition Width="60"/>
-            <ColumnDefinition Width="60"/>
-        </Grid.ColumnDefinitions>
-        <Button Text="▲" Margin="5,0,5,0" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" Vertical="Center" Grid.Column="1" Clicked="Button_Clicked_2"/>
-        <Button Text="ᐸ" Margin="0,5,0,5" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Clicked="Button_Clicked"/>
-        <Button Text="■" Margin="0,5,0,5" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"  Grid.Row="1" Grid.Column="1  " Clicked="Button_Clicked"/>
-        <Button Text="ᐳ" Margin="0,5,0,5" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked_1"/>
-        <Button Text="▼"  Margin="5,0,5,0" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" Grid.Row="2" Clicked="Button_Clicked_3"/>
-    </Grid>
+    <StackPanel>
+        <TextBlock Text="HYPERION Mobile Test 2.0 - NSR Software" Width="300"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="300" Width="*"/>
+                <ColumnDefinition MinWidth="300" Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition MinHeight="300" Height="*"/>
+                <RowDefinition MinHeight="300" Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="UP" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top"/>
+                <Button Content="UL" Grid.Row="0" Grid.Column="0"/>
+                <Button Content="UR"  Grid.Row="0" Grid.Column="2"/>
+                <Button Content="SP"  Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
+                <Button Content="DL"  Grid.Row="2" Grid.Column="2" VerticalAlignment="Center"/>
+                <Button Content="DN"  Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom"/>
+                <Button Content="DR"  Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+            </Grid>
+            <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Name="SensorReadouts"/>
+        </Grid>
+    </StackPanel>
+
 </Page>
